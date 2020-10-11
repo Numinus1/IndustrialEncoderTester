@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 8",
+		"os_version" : "6.2"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FFDEBB5768E",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffdebb5768d: resr_tawq + 0x6768d (tawq_dyn_set_clock_uncertainty_dlg + 0x58d)\n\t0xd30000003f:\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "15.1.0",
+		"build" : "185",
+		"edition" : "Lite Edition"
+	}
+}

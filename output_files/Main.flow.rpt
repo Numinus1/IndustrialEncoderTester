@@ -1,0 +1,134 @@
+Flow report for Main
+Fri Aug 24 15:53:32 2018
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Fri Aug 24 15:53:31 2018       ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                      ; Main                                        ;
+; Top-level Entity Name              ; Main                                        ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M50DAF484C6GES                            ;
+; Timing Models                      ; Preliminary                                 ;
+; Total logic elements               ; 1,294 / 49,760 ( 3 % )                      ;
+;     Total combinational functions  ; 1,184 / 49,760 ( 2 % )                      ;
+;     Dedicated logic registers      ; 751 / 49,760 ( 2 % )                        ;
+; Total registers                    ; 751                                         ;
+; Total pins                         ; 23 / 360 ( 6 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 1,280,640 / 1,677,312 ( 76 % )              ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 08/20/2018 13:17:30 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Main                ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                 ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 105852877766395.153475124906868 ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; SigMem_bb.v                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; ClockAcc_bb.v                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; ClockAcc.ppf                    ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --         ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 4958 MB             ; 00:00:41                           ;
+; Fitter                    ; 00:00:46     ; 1.0                     ; 5501 MB             ; 00:00:41                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 4882 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 5001 MB             ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4834 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4856 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:35     ; --                      ; --                  ; 00:01:38                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-ICV6H14  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-ICV6H14  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-ICV6H14  ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-ICV6H14  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-ICV6H14  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-ICV6H14  ; Windows 8 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Main -c Main
+quartus_fit --read_settings_files=off --write_settings_files=off Main -c Main
+quartus_asm --read_settings_files=off --write_settings_files=off Main -c Main
+quartus_sta Main -c Main
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Main -c Main --vector_source=C:/Users/ASUS/Documents/QuartusProjects/EncoderTest/1.2/wf0.vwf --testbench_file=C:/Users/ASUS/Documents/QuartusProjects/EncoderTest/1.2/simulation/qsim/wf0.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/ASUS/Documents/QuartusProjects/EncoderTest/1.2/simulation/qsim/ Main -c Main
+
+
+

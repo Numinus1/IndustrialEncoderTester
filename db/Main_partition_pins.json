@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Tx",
+					"strict" : false
+				},
+				{
+					"name" : "TxEnable",
+					"strict" : false
+				},
+				{
+					"name" : "ZIn",
+					"strict" : false
+				},
+				{
+					"name" : "Rx",
+					"strict" : false
+				},
+				{
+					"name" : "AIn",
+					"strict" : false
+				},
+				{
+					"name" : "BIn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

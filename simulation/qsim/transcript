@@ -1,0 +1,35 @@
+# do Main.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:53:38 on Aug 24,2018
+# vlog -work work Main.vo 
+# -- Compiling module Main
+# 
+# Top level modules:
+# 	Main
+# End time: 15:53:38 on Aug 24,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:53:38 on Aug 24,2018
+# vlog -work work wf0.vwf.vt 
+# -- Compiling module Main_vlg_vec_tst
+# 
+# Top level modules:
+# 	Main_vlg_vec_tst
+# End time: 15:53:38 on Aug 24,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Main_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 15:53:39 on Aug 24,2018
+# Loading work.Main_vlg_vec_tst
+# Loading work.Main
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-3017) Main.vo(47683): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /Main_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~  File: nofile
+# ** Warning: (vsim-3722) Main.vo(47683): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-3017) Main.vo(47706): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /Main_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: nofile
+# ** Warning: (vsim-3722) Main.vo(47706): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Note: $finish    : wf0.vwf.vt(69)
+#    Time: 800 ns  Iteration: 0  Instance: /Main_vlg_vec_tst
+# End time: 15:53:41 on Aug 24,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4

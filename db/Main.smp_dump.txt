@@ -1,0 +1,230 @@
+
+State Machine - |Main|SigRouter:SigN|ZCtr
+Name ZCtr.11 ZCtr.10 ZCtr.01 ZCtr.00 
+ZCtr.00 0 0 0 0 
+ZCtr.01 0 0 1 1 
+ZCtr.10 0 1 0 1 
+ZCtr.11 1 0 0 1 
+
+State Machine - |Main|SigRouter:SigP|ZCtr
+Name ZCtr.11 ZCtr.10 ZCtr.01 ZCtr.00 
+ZCtr.00 0 0 0 0 
+ZCtr.01 0 0 1 1 
+ZCtr.10 0 1 0 1 
+ZCtr.11 1 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|SendPhase
+Name SendPhase.000 SendPhase.010 SendPhase.001 
+SendPhase.000 0 0 0 
+SendPhase.001 1 0 1 
+SendPhase.010 1 1 0 
+
+State Machine - |Main|UartCentral:UART0|cenState
+Name cenState.10000 cenState.00010 cenState.00001 cenState.00000 cenState.11111 
+cenState.00000 0 0 0 0 0 
+cenState.00001 0 0 1 1 0 
+cenState.00010 0 1 0 1 0 
+cenState.10000 1 0 0 1 0 
+cenState.11111 0 0 0 1 1 
+
+State Machine - |Main|UartCentral:UART0|nState
+Name nState.00000 nState.10000 nState.00010 nState.00001 
+nState.00000 0 0 0 0 
+nState.00001 1 0 0 1 
+nState.00010 1 0 1 0 
+nState.10000 1 1 0 0 
+
+State Machine - |Main|UartCentral:UART0|readPPR
+Name readPPR.00 readPPR.10 readPPR.01 
+readPPR.00 0 0 0 
+readPPR.01 1 0 1 
+readPPR.10 1 1 0 
+
+State Machine - |Main|UartCentral:UART0|RxUartManager:RxUM0|sstate
+Name sstate.110 sstate.101 sstate.010 sstate.001 sstate.000 
+sstate.000 0 0 0 0 0 
+sstate.001 0 0 0 1 1 
+sstate.010 0 0 1 0 1 
+sstate.101 0 1 0 0 1 
+sstate.110 1 0 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|RxUartManager:RxUM0|RBstate
+Name RBstate.0111 RBstate.0110 RBstate.0101 RBstate.0100 RBstate.0011 RBstate.0010 RBstate.0001 RBstate.0000 
+RBstate.0000 0 0 0 0 0 0 0 0 
+RBstate.0001 0 0 0 0 0 0 1 1 
+RBstate.0010 0 0 0 0 0 1 0 1 
+RBstate.0011 0 0 0 0 1 0 0 1 
+RBstate.0100 0 0 0 1 0 0 0 1 
+RBstate.0101 0 0 1 0 0 0 0 1 
+RBstate.0110 0 1 0 0 0 0 0 1 
+RBstate.0111 1 0 0 0 0 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|RxUartManager:RxUM0|RxUart:Rx0|state
+Name state.1111 state.1100 state.1011 state.1010 state.1001 state.1000 state.0111 state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.0011 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.0100 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.0101 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.0110 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.0111 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.1000 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.1001 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.1010 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.1011 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.1100 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.1111 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|sstate
+Name sstate.11 sstate.10 sstate.01 sstate.00 
+sstate.00 0 0 0 0 
+sstate.01 0 0 1 1 
+sstate.10 0 1 0 1 
+sstate.11 1 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|Tempstate
+Name Tempstate.1001 Tempstate.1000 Tempstate.0110 Tempstate.0101 Tempstate.0100 Tempstate.0011 Tempstate.0010 Tempstate.0001 Tempstate.0000 
+Tempstate.0000 0 0 0 0 0 0 0 0 0 
+Tempstate.0001 0 0 0 0 0 0 0 1 1 
+Tempstate.0010 0 0 0 0 0 0 1 0 1 
+Tempstate.0011 0 0 0 0 0 1 0 0 1 
+Tempstate.0100 0 0 0 0 1 0 0 0 1 
+Tempstate.0101 0 0 0 1 0 0 0 0 1 
+Tempstate.0110 0 0 1 0 0 0 0 0 1 
+Tempstate.1000 0 1 0 0 0 0 0 0 1 
+Tempstate.1001 1 0 0 0 0 0 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|Stopstate
+Name Stopstate.0011 Stopstate.0010 Stopstate.0001 Stopstate.0000 Stopstate.0100 
+Stopstate.0000 0 0 0 0 0 
+Stopstate.0001 0 0 1 1 0 
+Stopstate.0010 0 1 0 1 0 
+Stopstate.0011 1 0 0 1 0 
+Stopstate.0100 0 0 0 1 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|Sendstate
+Name Sendstate.0111 Sendstate.0110 Sendstate.0101 Sendstate.0100 Sendstate.0011 Sendstate.0010 Sendstate.0001 Sendstate.0000 Sendstate.1000 
+Sendstate.0000 0 0 0 0 0 0 0 0 0 
+Sendstate.0001 0 0 0 0 0 0 1 1 0 
+Sendstate.0010 0 0 0 0 0 1 0 1 0 
+Sendstate.0011 0 0 0 0 1 0 0 1 0 
+Sendstate.0100 0 0 0 1 0 0 0 1 0 
+Sendstate.0101 0 0 1 0 0 0 0 1 0 
+Sendstate.0110 0 1 0 0 0 0 0 1 0 
+Sendstate.0111 1 0 0 0 0 0 0 1 0 
+Sendstate.1000 0 0 0 0 0 0 0 1 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|PPRstate
+Name PPRstate.10100 PPRstate.10011 PPRstate.10010 PPRstate.10001 PPRstate.10000 PPRstate.01111 PPRstate.01110 PPRstate.01101 PPRstate.01100 PPRstate.01011 PPRstate.01010 PPRstate.01001 PPRstate.01000 PPRstate.00111 PPRstate.00110 PPRstate.00101 PPRstate.00100 PPRstate.00011 PPRstate.00010 PPRstate.00001 PPRstate.00000 
+PPRstate.00000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+PPRstate.00001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+PPRstate.00010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+PPRstate.00011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+PPRstate.00100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+PPRstate.00101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+PPRstate.00110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+PPRstate.00111 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+PPRstate.01000 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+PPRstate.01001 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+PPRstate.01010 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+PPRstate.01011 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.01100 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.01101 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.01110 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.01111 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.10000 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.10001 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.10010 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.10011 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+PPRstate.10100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|Startstate
+Name Startstate.1001 Startstate.1000 Startstate.0110 Startstate.0101 Startstate.0100 Startstate.0011 Startstate.0010 Startstate.0001 Startstate.0000 
+Startstate.0000 0 0 0 0 0 0 0 0 0 
+Startstate.0001 0 0 0 0 0 0 0 1 1 
+Startstate.0010 0 0 0 0 0 0 1 0 1 
+Startstate.0011 0 0 0 0 0 1 0 0 1 
+Startstate.0100 0 0 0 0 1 0 0 0 1 
+Startstate.0101 0 0 0 1 0 0 0 0 1 
+Startstate.0110 0 0 1 0 0 0 0 0 1 
+Startstate.1000 0 1 0 0 0 0 0 0 1 
+Startstate.1001 1 0 0 0 0 0 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|IDstate
+Name IDstate.1110 IDstate.1101 IDstate.1100 IDstate.1011 IDstate.1010 IDstate.1001 IDstate.1000 IDstate.0111 IDstate.0110 IDstate.0101 IDstate.0100 IDstate.0011 IDstate.0010 IDstate.0001 IDstate.0000 
+IDstate.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+IDstate.0001 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+IDstate.0010 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+IDstate.0011 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+IDstate.0100 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+IDstate.0101 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+IDstate.0110 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+IDstate.0111 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+IDstate.1000 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+IDstate.1001 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+IDstate.1010 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+IDstate.1011 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+IDstate.1100 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+IDstate.1101 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+IDstate.1110 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|TrBr
+Name TrBr.1111 TrBr.1110 TrBr.0111 TrBr.0110 TrBr.0101 TrBr.0100 TrBr.0011 TrBr.0010 TrBr.0001 TrBr.0000 
+TrBr.0000 0 0 0 0 0 0 0 0 0 0 
+TrBr.0001 0 0 0 0 0 0 0 0 1 1 
+TrBr.0010 0 0 0 0 0 0 0 1 0 1 
+TrBr.0011 0 0 0 0 0 0 1 0 0 1 
+TrBr.0100 0 0 0 0 0 1 0 0 0 1 
+TrBr.0101 0 0 0 0 1 0 0 0 0 1 
+TrBr.0110 0 0 0 1 0 0 0 0 0 1 
+TrBr.0111 0 0 1 0 0 0 0 0 0 1 
+TrBr.1110 0 1 0 0 0 0 0 0 0 1 
+TrBr.1111 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Main|UartCentral:UART0|TxUartManager:TxUM0|TxUart:Txer0|state
+Name state.1010 state.1001 state.1000 state.0111 state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 0 0 0 0 1 0 1 
+state.0011 0 0 0 0 0 0 0 1 0 0 1 
+state.0100 0 0 0 0 0 0 1 0 0 0 1 
+state.0101 0 0 0 0 0 1 0 0 0 0 1 
+state.0110 0 0 0 0 1 0 0 0 0 0 1 
+state.0111 0 0 0 1 0 0 0 0 0 0 1 
+state.1000 0 0 1 0 0 0 0 0 0 0 1 
+state.1001 0 1 0 0 0 0 0 0 0 0 1 
+state.1010 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Main|greset:rset0|rcont
+Name rcont.00 rcont.10 rcont.01 
+rcont.00 0 0 0 
+rcont.01 1 0 1 
+rcont.10 1 1 0 
+
+State Machine - |Main|Ranger:comb_5|range
+Name range.0111 range.0100 range.0011 range.0010 range.0001 range.0000 
+range.0000 0 0 0 0 0 0 
+range.0001 0 0 0 0 1 1 
+range.0010 0 0 0 1 0 1 
+range.0011 0 0 1 0 0 1 
+range.0100 0 1 0 0 0 1 
+range.0111 1 0 0 0 0 1 
+
+State Machine - |Main|Ranger:comb_4|range
+Name range.0111 range.0100 range.0011 range.0010 range.0001 range.0000 
+range.0000 0 0 0 0 0 0 
+range.0001 0 0 0 0 1 1 
+range.0010 0 0 0 1 0 1 
+range.0011 0 0 1 0 0 1 
+range.0100 0 1 0 0 0 1 
+range.0111 1 0 0 0 0 1 
+
+State Machine - |Main|Ranger:comb_3|range
+Name range.0111 range.0100 range.0011 range.0010 range.0001 range.0000 
+range.0000 0 0 0 0 0 0 
+range.0001 0 0 0 0 1 1 
+range.0010 0 0 0 1 0 1 
+range.0011 0 0 1 0 0 1 
+range.0100 0 1 0 0 0 1 
+range.0111 1 0 0 0 0 1 
